@@ -68,7 +68,7 @@ contract FriendLoopLPLocker {
             lockUpDeadline[_tokenId] == 0,
             "Withdrawal has been already triggered"
         );
-        lockUpDeadline[_tokenId] = block.timestamp + (0 days);
+        lockUpDeadline[_tokenId] = block.timestamp + (7 days);
         withdrawTriggered[_tokenId] = true;
     }
 
